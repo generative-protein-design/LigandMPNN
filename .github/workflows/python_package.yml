@@ -24,7 +24,7 @@ jobs:
           pixi run build-wheel
 
       - name: Install Twine
-        run: pip install twine
+        run: pip install --upgrade twine packaging
 
       - name: Upload to PyPi
         env:
