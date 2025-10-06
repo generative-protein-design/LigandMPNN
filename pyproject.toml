@@ -1,5 +1,5 @@
 [project]
-name = "ligand_mpnn"
+name = "pd-ligand-mpnn"
 requires-python = ">=3.9,<3.10"
 scripts = { run-ligand = "ligand_mpnn.run:main" }
 version = "0.1.0"
