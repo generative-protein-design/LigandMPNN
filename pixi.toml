@@ -1,0 +1,26 @@
+[project]
+name = "ligand_mpnn"
+version = "0.1.0"
+description = "Diffusion model environment for nyl12 loop engineering"
+authors = []
+platforms = ["linux-64"]
+preview = ["pixi-build"]
+
+
+channels = [
+    "dglteam/label/cu118",
+    "pytorch",
+    "https://conda.rosettacommons.org",
+    "conda-forge",
+    "nvidia"
+]
+channel-priority = "disabled"
+
+
+[dependencies]
+hatchling = "==1.26.3"
+python = ">=3.9,<3.10"
+python-build = "*"
+
+[tasks]
+build-wheel = "python -m build --wheel"

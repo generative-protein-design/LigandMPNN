@@ -7,7 +7,7 @@ import sys
 
 import numpy as np
 import torch
-from data_utils import (
+from ligand_mpnn.data_utils import (
     alphabet,
     element_dict_rev,
     featurize,
@@ -19,15 +19,17 @@ from data_utils import (
     restype_str_to_int,
     write_full_PDB,
 )
-from model_utils import ProteinMPNN
+from ligand_mpnn.model_utils import ProteinMPNN
 from prody import writePDB
-from sc_utils import Packer, pack_side_chains
+from ligand_mpnn.sc_utils import Packer, pack_side_chains
 
 
-def main(args) -> None:
+def main() -> None:
     """
     Inference function
     """
+    args = parse_args()
+
     if args.seed:
         seed = args.seed
     else:
@@ -674,7 +676,8 @@ def main(args) -> None:
                         )
 
 
-if __name__ == "__main__":
+def parse_args():
+
     argparser = argparse.ArgumentParser(
         formatter_class=argparse.ArgumentDefaultsHelpFormatter
     )
@@ -987,4 +990,7 @@ if __name__ == "__main__":
     )
 
     args = argparser.parse_args()
-    main(args)
+    return args
+
+if __name__ == "__main__":
+    main()
