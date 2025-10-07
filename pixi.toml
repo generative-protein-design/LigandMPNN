@@ -1,6 +1,6 @@
 [project]
 name = "ligand_mpnn"
-version = "0.1.1"
+version = "0.1.2"
 description = "Ligand MPNN Python Package"
 authors = []
 platforms = ["linux-64"]
