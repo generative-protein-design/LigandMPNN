@@ -2,7 +2,7 @@
 name = "pd-ligand-mpnn"
 requires-python = ">=3.9,<3.10"
 scripts = { run-ligand = "ligand_mpnn.run:main" }
-version = "0.1.0"
+version = "0.1.1"
 
 dependencies = [
     "biopython==1.79",
@@ -31,7 +31,7 @@ dependencies = [
     "sympy==1.12",
     "torch==2.2.1",
     "triton==2.2.0",
-    "typing_extensions==4.10.0",
+    "typing_extensions",
     "ml-collections==0.1.1",
     "dm-tree==0.1.8"
 ]

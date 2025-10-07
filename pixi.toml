@@ -1,7 +1,7 @@
 [project]
 name = "ligand_mpnn"
-version = "0.1.0"
-description = "Diffusion model environment for nyl12 loop engineering"
+version = "0.1.1"
+description = "Ligand MPNN Python Package"
 authors = []
 platforms = ["linux-64"]
 preview = ["pixi-build"]
